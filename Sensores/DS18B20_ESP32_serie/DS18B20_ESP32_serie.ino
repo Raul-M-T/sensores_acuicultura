@@ -13,9 +13,9 @@
 *Adaptado por Raúl Miranda-Tello 20220220
 *
 *DS_18B20         ESP32CAM
-*   G              5 V
-*   R              GND
-*   Y              GPIO 12
+*   G              GND
+*   R              5 V
+*   Y              GPIO NN (entrada digital D2)
 */
 
 
@@ -24,7 +24,7 @@
 #include <DallasTemperature.h>
 
 //variables
-#define ONE_WIRE_BUS 12  //El cable de datos está conectado al pin digital 2
+#define ONE_WIRE_BUS 2  //El cable de datos está conectado al pin digital 2
 
 //Objetos
 OneWire oneWire(ONE_WIRE_BUS);  //Configura una instancia de oneWire para comunicarse con cualquier dispositivo OneWire
